@@ -1,7 +1,7 @@
 <?php
-$parola=$_GET['badword'];
 $frase = 'Oggi studiamo PHP, vi sta piacendo?';
-$fraseVariata = str_replace('PHP',$parola,$frase);
+$parola=$_GET['badword'];
+$fraseVariata = str_replace($parola,'***', $frase);
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,6 +14,7 @@ $fraseVariata = str_replace('PHP',$parola,$frase);
 <body>
 
 <p><?php echo $frase ?></p>
+<p><?php echo $parola ?></p>
 <p><?php echo $fraseVariata ?></p>
 
 
