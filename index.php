@@ -15,8 +15,16 @@ $fraseVariata = str_replace('PHP',$parola,$frase);
 
 <p><?php echo $frase ?></p>
 <p><?php echo $fraseVariata ?></p>
-<?php var_dump($frase) ?>
-<?php var_dump($fraseVariata) ?>
+
+
+
+<?php $lunghezzaFrase = strlen($frase);
+echo 'la prima frase è lunga: ' .$lunghezzaFrase;
+ ?>
+ <?php echo '<br>'; ?>
+ <?php $lunghezzaFrase = strlen($fraseVariata);
+ echo 'la seconda frase è lunga: ' .$lunghezzaFrase;
+  ?>
 
 
 
